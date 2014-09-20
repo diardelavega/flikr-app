@@ -1,0 +1,38 @@
+/* 
+    Document   : ajx
+    Created on : 18 Νοε 2011, 12:28:53 μμ
+    Author     : it20846
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+td {
+    background-color: aliceblue;
+    vertical-align: 30%;
+      }
+      h1{
+         
+        font-style:  italic ;
+        font-weight: bolder ;
+        color:   #0066cc;
+        font:  xx-large;
+      }
+
+input{
+    margin: 3pt;
+   }
+   
+   img{
+       position: fixed;
+       position: absolute;
+   }
+
