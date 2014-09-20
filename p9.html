@@ -1,0 +1,72 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>flikr app</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+        <script type="text/javascript" src="ajaxjs.js"></script>
+        <link href="ajx.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body onload="setfocus();">
+
+        <table  border=0"  width="100%"  cellspacing="0" cellpadding="4"  >
+            <thead>
+                <tr>
+                    <th colspan="2" style="padding-top: 20pt"><h1>search flikr, easy</h1></th>
+                </tr>
+                <tr>
+                    <th colspan="2">  <hr> </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center" colspan="2" cell-border="2" style="padding:10pt">
+                        <input type="text"  id="area"  onkeydown="tothree(this.value)" />
+                        <input type="submit" id="sub" value="search" onclick="sendRequest();" />
+                    </td>
+
+                </tr>
+                <tr >
+                    <td   align="center" style="padding:10pt" width="50%">
+                        <div id="diva" ></div>
+                    </td>
+                    <td  style="padding-top:10pt"  align="left" width="50%">
+					<div style="position:fixed; top:195px; ">
+                        <div id="photo_id" > </div>
+					</div>
+                    </td>
+
+                </tr>
+				 <!--div  style="float: left;margin-right: 25px;margin-top: 5%"-->
+				 <div style="position:fixed; bottom:30px; ">
+                            <input type="submit" value="prev." id="previous" onclick="previous();"/>
+                            <input type="submit" value="nex." id="next " onclick="next();"/>
+                        </div>
+                <tr>
+                    <td >
+                       
+                    </td>
+                    <td>
+
+                        <div id="more"  onclick="go_get_key();"  >
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+
+</html>
+
+
